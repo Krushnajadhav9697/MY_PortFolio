@@ -4,191 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OGMy Portfolio</title>
+    <title>MyPortfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Korean">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="container" id="home">
-        <div class="navbar">
-            <nav>
-                <div class="left">Krushna's Portfolio</div>
-                <div class="right">
-                    <ul>
-                        <li><a href="/index.html">HOME</a></li>
-                        <li><a href="/about.html">ABOUT</a></li>
-                        <li><a href="/project.html">PROJECT</a></li>
-                        <li><a href="/contact.html">CONTACT</a></li>
-                    </ul>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-k"></i>
+                    <div class="logo-text">Krushna Jadhav</div>
                 </div>
-            </nav>
-        </div>
-        <div class="main">
-            <div class="information">
-                <div class="info">
-                    <div class="hi">Hi, <span>I am</span></div>
-                    <div class="name">Krushna Jadhav</div>
-                    <div class="about" id="ab"></div>
-                    <div class="buttons">
-                        <button class="btn"
-                            onclick="document.location='https://drive.google.com/drive/folders/1t7I-0UNjuBNKG8jOeswe_CgUJ75ppvDs?usp=drive_link'">Download
-                            CV</button>
-                        <button class="btn" onclick="document.location='/contact.html'">Contact me</button>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">AboutMe</a></li>
+                        <li><a href="img/krushna_resume.pdf">Resume</a></li>
+                        <li><a href="/project.html">Projects</a></li>
+                        <li><a href="contact.html">ContactMe</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/pic3.jpg" alt="profile-pic">
+                </div>
+                <div class="hero-text">
+                    <h5>HI I'm <span class="input">Python Full stack Devloper</span></h5>
+                    <h1>Krushna Jadhav</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur asperiores voluptas sapiente
+                        id ratione sunt eius rem dolorem, dolore suscipit? Porro tempora, harum rem consequuntur
+                        asperiores architecto sit consequatur deserunt, rerum minima beatae magni quisquam sunt eligendi
+                        excepturi, deleniti animi eius fugiat reiciendis ipsam debitis!</p>
+
+                    <div class="btn-group">
+                        <a href="img/krushna_resume.pdf" download="krushna_resume.pdf" class="btn active">Download
+                            CV</a>
+                        <a href="contact.html" class="btn">Contact</a>
                     </div>
                     <div class="social">
-                        <a class="a" href="mailto:krushnajadhav9697@gmail.com"><i
-                                class='bx bxl-gmail bx-tada bx-flip-horizontal'></i></a>
-                        <a class="a" href="https://www.linkedin.com/in/krushna-jadhav-426080230" target="_blank">
-                            <i class='bx bxl-linkedin-square bx-tada bx-flip-horizontal'></i></a>
-                        <a class="a" href="https://x.com/KrushnaJ32637?t=OOo0Cxw-HGZMCzyAm7HMmQ&s=09" target="_blank"><i
-                                class='bx bxl-twitter bx-tada bx-flip-horizontal'></i></a>
-                        <a class="a" href="https://github.com/Krushnajadhav9697" target="_blank"><i
-                                class='bx bxl-github bx-tada'></i></a>
+                        <a href="mailto:krushnajadhav9697@gmail.com"><i class="fa-brands fa-google"></i></a>
+                        <a href="https://www.linkedin.com/in/krushna-jadhav-426080230"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/krushna_jadhav_45?igsh=MXJ2eW40YnI0MHdpMg=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Krushnajadhav9697"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-                <div class="pic">
-                    <div class="circle">
-                        <div class="img1">
-                            <img src="img/profile_pic2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+
     </div>
-    <!-- <section class="aboutMe" id="aboutMe">
-        <div class="about-img">
-            <div>
-                <img src="img/pic3.jpg" alt="">
-            </div>
-        </div>
-        <div class="about-text">
-            <h2>About<span>Me</span></h2> <br>
-            <h3 class="short-intro">As a fresher full stack developer, I am eager to apply my enthusiasm for
-                programming, web development, and problem-solving to contribute to dynamic projects and collaborate with
-                experienced teams. I am constantly seeking opportunities to enhance my skills and broaden my knowledge
-                in both front-end and back-end technologies. </h3>
-            <h4><u>Education:-</u></h4>
-            <div class="education">
-                <div class="edu" id="dip">
-                    <h1 class="year">2019-2022</h1>
-                    <h3>Bachelor of Engineering</h3>
-                    <p class="clg">Mumbai University</p>
-                    <p class="grade">Grade:-First Class</p>
-                </div>
-                <br>
-                <div class="edu" id="BE">
-                    <h1 class="year">2016-2019</h1>
-                    <h3>Diploma</h3>
-                    <p class="clg">M.S.B.T.E</p>
-                    <p class="grade">Grade:-First Class</p>
-                </div>
-            </div>
-            <div class="skills">
-                <h4><u>Skills :-</u></h4>
-                <ul>
-                    <li><i class='bx bx-chevrons-right bx-tada'></i>Programing Languages : C,C++,Python</li>
-                    <li><i class='bx bx-chevrons-right bx-tada'></i>Frameworks : Django</li>
-                    <li><i class='bx bx-chevrons-right bx-tada'></i>Web Devlopment : Html ,Css ,Java-Script</li>
-                    <li><i class='bx bx-chevrons-right bx-tada'></i>Databases : SQL</li>
-
-                </ul>
-
-            </div>
-        </div>
-    </section> -->
-    <!-- <section class="project" id="project">
-        <h1 class="project-heading">Projects</h1>
-        <div class="pro">
-            <div class="p1">
-                <div class="proj-img1">
-                    <img src="img/proj_1.jpg" alt="">
-                    <h5><u>Electricity Management System Using SQL</u></h5> <br>
-                    <p>A case study on Electricity Management System.This case study is designed to efficiently manage
-                        electricity consumption data.This system aims to provide accurate tracking of electricity usage,
-                        facilitate billing processes, and ensure effective maintenance of electrical systems. The system
-                        encompasses multiple entities, including meters, residents, electricity rates, complaints and
-                        customers.
-                    </p>
-                </div>
-            </div>
-            <div class="p2">
-                <div class="proj-img1">
-                    <img src="img/proj_2.jpg" alt="">
-                    <h5><u> Mystore Website Using html,CSS,java-script,Python,Django,Mysql</u></h5> <br>
-                    <p>TrendWear is a fully functional e-commerce platform that showcases a solid implementation of
-                        Django’s capabilities in web development. While the payment integration is yet to be added, the
-                        project highlights key features essential for any online store, including user authentication,
-                        product management, dynamic cart functionality, and a responsive design. This project is a great
-                        demonstration of how Django can be used to create a scalable and maintainable web application.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact<span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit voluptate quos, ratione
-                adipisci suscipit nobis aut nostrum ex odit provident molestiae saepe voluptatum repellat pariatur,
-                perspiciatis consectetur vel eius temporibus itaque quo corrupti tempore, veniam voluptas. Recusandae
-                aut distinctio, odit iusto eos dolorum beatae.</p>
-            <div class="contact-list">
-                <li><i class='bx bxs-send bx-tada'></i>krushnajadhav@gmail.com</li> <br>
-                <li><i class='bx bx-phone bx-tada'></i>12345-78965</li>
-            </div>
-            <div class="contact-icons">
-                <a href="https://www.instagram.com/krushna_jadhav_45?igsh=MXJ2eW40YnI0MHdpMg==" target="_blank"><i
-                        class='bx bxl-instagram bx-tada'></i></a>
-                <a href="https://www.facebook.com/share/pj8cDsTcuXdcpftX/?mibextid=qi2Omg" target="_blank"><i
-                        class='bx bxl-meta bx-tada'></i></a>
-                <a href="https://wa.me/qr/NFYB4UUMTWJOC1" target="_blank"><i class='bx bxl-whatsapp bx-tada'></i></a>
-                <a href="https://www.linkedin.com/in/krushna-jadhav-426080230" target="_blank"><i
-                        class='bx bxl-linkedin-square bx-tada bx-flip-horizontal'></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required> <br><br>
-                <input type="email" placeholder="Enter Email" required> <br><br>
-                <input type="" name="" placeholder="Enter Subject" id=""> <br><br>
-                <textarea name="" id="" placeholder="Enter your message" cols="10" rows="8" required></textarea>
-                <br><br>
-                <input id="send" type="submit" value="submit">
-            </form>
-
-        </div>
-    </section> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
-        text = ["i'm a full stack web developer", "i enjoy creating website"]
-        i = 0
-        j = 0
-        function about() {
-            document.getElementById("ab").innerHTML += text[i][j]
-            j++
-            if (j > text[i].length) {
-                j = 0
-                document.getElementById("ab").innerHTML = ""
-                i++
-                if (i >= text.length) {
-                    i = 0
-                }
-            }
-        }
-        setInterval(about, 200)
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ['Python Full-Stack Devloper', 'FrontEnd Devloper'],
+            typedSpeed: 30,
+            backSpeed: 95,
+            loop: true
+        })
     </script>
-
-
-
 </body>
 
 </html>

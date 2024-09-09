@@ -4,63 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyPortfolio-Contact</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Korean">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+            /* margin-top: 50px; */
+            padding: 0px 0px;
+        }
+
+        .contact-text {
+            width: 40vw;
+            height: 100vh;
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+
+        .contact-text h2 {
+            font-size: 80px;
+            line-height: 4cm;
+        }
+
+        .contact-text p {
+            font-size: 20px;
+            color: wheat;
+        }
+
+        .contact-text span {
+            color: red;
+        }
+
+        .contact-list {
+            /* font-size: 15px; */
+            margin-top: 30px;
+        }
+
+        .contact-list li {
+            text-decoration: none;
+            font-size: 25px;
+            display: block;
+        }
+
+        .contact-icons a {
+            color: rgba(20, 18, 18, 0.808);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background: transparent;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(24, 23, 23, 0.723);
+            border-radius: 50%;
+            margin: 20px 30px 20px 0;
+        }
+
+        .contact-icons a:hover {
+            color: rgb(255, 255, 255);
+            background: rgba(0, 0, 0, 0.638);
+            box-shadow: 0px 0 15px rgb(0, 0, 0);
+        }
+
+        .contact-form form {
+            padding: 100px 10px 10px 10px;
+        }
+
+        .contact-form input,
+        textarea {
+            border: none;
+            outline: none;
+            width: 25vw;
+            color: black;
+            background: rgb(226, 221, 221);
+            font-size: 19px;
+            font-weight: 500;
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        #send {
+            /* color: rgb(30, 0, 118); */
+            /* background-color: rgb(217, 214, 27); */
+            padding: 20px;
+            width: 100%;
+        }
+
+        #send:hover {
+            background-color: rgb(35, 33, 33);
+            color: white;
+            box-shadow: 10px 0 15px rgb(0, 0, 0);
+        }
+
+        .cont {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            .contact-text {
+                display: none;
+            }
+
+            .contact-form input,
+            textarea {
+                border: none;
+                outline: none;
+                width: 80vw;
+                color: black;
+                background: rgb(226, 221, 221);
+                font-size: 19px;
+                font-weight: 500;
+                padding: 18px;
+                border-radius: 10px;
+            }
+
+            #send {
+                /* color: rgb(30, 0, 118); */
+                /* background-color: rgb(217, 214, 27); */
+                padding: 20px;
+                width: 100%;
+            }
+
+            #send:hover {
+                background-color: rgb(35, 33, 33);
+                color: white;
+
+            }
+
+            .cont {
+                display: block;
+                font-size: 50px;
+                margin: 0px 10px 50px 30px;
+                color: red;
+                text-decoration: underline;
+            }
+
+            header {
+                bottom: 0;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <nav>
-            <div class="left">Krushna's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/about.html">ABOUT</a></li>
-                    <li><a href="/project.html">PROJECT</a></li>
-                    <li><a href="/contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-k"></i>
+                    <div class="logo-text">Krushna Jadhav</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">AboutMe</a></li>
+                        <li><a href="img/krushna_resume.pdf">Resume</a></li>
+                        <li><a href="/project.html">Projects</a></li>
+                        <li><a href="contact.html">ContactMe</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="contact" id="contact">
+
+                <div class="contact-text">
+                    <h2>Contact<span>Me</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit voluptate quos,
+                        ratione
+                        adipisci suscipit nobis aut nostrum ex odit provident molestiae saepe voluptatum repellat
+                        pariatur,
+                        perspiciatis consectetur vel eius temporibus itaque quo corrupti tempore, veniam voluptas.
+                        Recusandae
+                        aut distinctio, odit iusto eos dolorum beatae.</p>
+                    <div class="contact-list">
+                        <li><i class='bx bxs-send bx-tada'></i>krushnajadhav9697@gmail.com</li> <br>
+                        <li><i class='bx bx-phone bx-tada'></i>+91 8805947135</li>
+                    </div>
+                    <div class="contact-icons">
+                        <a href="https://www.instagram.com/krushna_jadhav_45?igsh=MXJ2eW40YnI0MHdpMg=="
+                            target="_blank"><i class='bx bxl-instagram bx-tada'></i></a>
+                        <a href="https://www.facebook.com/share/pj8cDsTcuXdcpftX/?mibextid=qi2Omg" target="_blank"><i
+                                class='bx bxl-meta bx-tada'></i></a>
+                        <a href="https://wa.me/qr/NFYB4UUMTWJOC1" target="_blank"><i
+                                class='bx bxl-whatsapp bx-tada'></i></a>
+                        <a href="https://www.linkedin.com/in/krushna-jadhav-426080230" target="_blank"><i
+                                class='bx bxl-linkedin-square bx-tada bx-flip-horizontal'></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="">
+                        <h1 class="cont">ContactMe</h1>
+                        <input type="text" placeholder="Enter Your Name" required> <br><br>
+                        <input type="email" placeholder="Enter Email" required> <br><br>
+                        <input type="" name="" placeholder="Enter Subject" id=""> <br><br>
+                        <textarea name="" id="" placeholder="Enter your message" cols="10" rows="5" required></textarea>
+                        <br><br>
+                        <input id="send" type="submit" value="submit">
+                    </form>
+
+                </div>
+            </section>
+
+
+        </div>
+
     </div>
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact<span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem fugit voluptate quos, ratione
-                adipisci suscipit nobis aut nostrum ex odit provident molestiae saepe voluptatum repellat pariatur,
-                perspiciatis consectetur vel eius temporibus itaque quo corrupti tempore, veniam voluptas. Recusandae
-                aut distinctio, odit iusto eos dolorum beatae.</p>
-            <div class="contact-list">
-                <li><i class='bx bxs-send bx-tada'></i>krushnajadhav9697@gmail.com</li> <br>
-                <li><i class='bx bx-phone bx-tada'></i>+91 8805947135</li>
-            </div>
-            <div class="contact-icons">
-                <a href="https://www.instagram.com/krushna_jadhav_45?igsh=MXJ2eW40YnI0MHdpMg==" target="_blank"><i
-                        class='bx bxl-instagram bx-tada'></i></a>
-                <a href="https://www.facebook.com/share/pj8cDsTcuXdcpftX/?mibextid=qi2Omg" target="_blank"><i
-                        class='bx bxl-meta bx-tada'></i></a>
-                <a href="https://wa.me/qr/NFYB4UUMTWJOC1" target="_blank"><i class='bx bxl-whatsapp bx-tada'></i></a>
-                <a href="https://www.linkedin.com/in/krushna-jadhav-426080230" target="_blank"><i
-                        class='bx bxl-linkedin-square bx-tada bx-flip-horizontal'></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required> <br><br>
-                <input type="email" placeholder="Enter Email" required> <br><br>
-                <input type="" name="" placeholder="Enter Subject" id=""> <br><br>
-                <textarea name="" id="" placeholder="Enter your message" cols="10" rows="8" required></textarea>
-                <br><br>
-                <input id="send" type="submit" value="submit">
-            </form>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
 
-        </div>
-    </section>
-
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
 </body>
 
 </html>
