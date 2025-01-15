@@ -159,6 +159,13 @@ nav .navlinks li a{
     color:#007ced;
     transform: rotate(360deg);
 }
+
+.contact-list{
+    color: rgb(227, 198, 130);
+}
+.contact-icons a{
+    color: white;
+}
 /* responsive */
 @media(max-width:930px)
 {
